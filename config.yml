@@ -1,6 +1,6 @@
-title: # a name for your Learning Lab course
-tagline: # a short description for your Learning Lab course, displayed on the course catalog
-description: # a longer description for your Learning Lab course, displayed on the course's landing page
+title: Managing Git Branches
+tagline: Develop like a pro with git branches
+description: A walk-through of using git branches for development but two people, looking at merging branches and resolving conflicts.
 
 # Repository setup
 # The following section template information for the repository
@@ -23,38 +23,38 @@ before:
 # Create one step for each action that a learner will complete
 
 steps:
-# Step 1: EDIT HERE - INTERNAL COMMENT DESCRIBING STEP 
-- title: # the title of the step, shown to the learner in the course progress page
-  description: # a description of the step, shown to the learner in the course progress page
+# Step 1: Dev A - Create species branch 
+- title: Dev A - Create species branch # the title of the step, shown to the learner in the course progress page
+  description: Create and checkout the species branch. This can either be done in two steps (git create species then git checkout species) or by using the -b flag of checkout; git checkout -b species# a description of the step, shown to the learner in the course progress page
   event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: # the type of action, full list at https://lab.github.com/docs/actions
 
-# Step 2: EDIT HERE -INTERNAL COMMENT FOR STEP 2
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
+# Step 2: Dev A - Edit iris_analysis.sh
+- title: Dev A - Edit iris_analysis.sh # the title of the step, shown to the learner in the course progress page
+  description: Add your name (or Developer A) on line 9, where it says "Written by". And Make the function get_species print a list of unique species in the file located at Iris/Iris.data.txt# a description of the step, shown to the learner in the course progress page
+  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  actions: # a list of the actions that will occur when the step is triggered by an event
+  - type: # the type of action, full list at https://lab.github.com/docs/actions
+
+# Step 3: Dev B - Create soil branch
+- title: Dev B - Create soil branch # the title of the step, shown to the learner in the course progress page
+  description: Create and checkout the soil branch. This can either be done in two steps (git create soil then git checkout soil) or with the -b flag of checkout; git checkout -b soil# a description of the step, shown to the learner in the course progress page
+  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  actions: # a list of the actions that will occur when the step is triggered by an event
+  - type: # the type of action, full list at https://lab.github.com/docs/actions
+
+# Step 4: Dev B - Edit iris_analysis.sh
+- title: Dev B - Edit iris_analysis.sh# the title of the step, shown to the learner in the course progress page
+  description: Add your name (or Developer A) on line 9, where it says "Written by". And Make the function get_species print a list of unique species in the file located at Iris/Iris.data.txt# a description of the step, shown to the learner in the course progress page
 #  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
-# Step 3: EDIT HERE - INTERNAL COMMENT FOR STEP 3
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
-#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
-#  actions: # a list of the actions that will occur when the step is triggered by an event
-#  - type: # the type of action, full list at https://lab.github.com/docs/actions
-
-# Step 4: EDIT HERE - INTERNAL COMMENT FOR STEP 4
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
-#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
-#  actions: # a list of the actions that will occur when the step is triggered by an event
-#  - type: # the type of action, full list at https://lab.github.com/docs/actions
-
-# Step 5: EDIT HERE - INTERNAL COMMENT FOR STEP 5
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
-#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
-#  actions: # a list of the actions that will occur when the step is triggered by an event
-#  - type: # the type of action, full list at https://lab.github.com/docs/actions
+# Step 5: Dev A - push changes
+- title: Dev A - push changes # the title of the step, shown to the learner in the course progress page
+  description: push the changes # a description of the step, shown to the learner in the course progress page
+  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  actions: # a list of the actions that will occur when the step is triggered by an event
+  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
